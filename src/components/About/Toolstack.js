@@ -1,33 +1,25 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
-} from "react-icons/si";
+import { FaDatabase, FaNetworkWired, FaCodeBranch, FaDesktop } from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <FaDatabase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <FaNetworkWired />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <FaCodeBranch />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <FaDesktop />
       </Col>
     </Row>
   );
 }
 
 export default Toolstack;
+
